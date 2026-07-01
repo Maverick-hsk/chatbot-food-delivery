@@ -352,11 +352,9 @@ http://127.0.0.1:5500/home.html
 
 ---
 
-```markdown
-## Dialogflow context
+## Dialogflow Context
 
-![Dialogflow context](screenshots/dailogflow_context.gif)
-```
+![Dialogflow Context](screenshots/dialogflow_context.gif)
 
 ---
 
