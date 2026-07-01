@@ -1,0 +1,126 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+header{
+    background:#ff5733;
+    position:sticky;
+    top:0;
+    z-index:999;
+    padding:20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #f0f0f0;
+}
+
+section{
+    margin:20px;
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+section:hover{
+    transform:translateY(-4px);
+}
+
+section h2 {
+    color: #ff5733;
+}
+
+footer {
+    background-color: #ff5733;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.chat-bot {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+
+    --df-messenger-chat-window-height: 430px;
+    --df-messenger-chat-window-width: 350px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+
+section img{
+    width:100%;
+    border-radius:12px;
+    transition:.4s;
+}
+
+section img:hover{
+    transform:scale(1.02);
+}
+@media (max-width:768px){
+
+    .container{
+        padding:10px;
+    }
+
+    header{
+        padding:15px;
+    }
+
+    nav{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:12px;
+    }
+
+    nav a{
+        display:block;
+        margin:5px 0;
+    }
+
+    section{
+        margin:10px;
+        padding:15px;
+    }
+
+    section img{
+        width:100%;
+        height:auto;
+    }
+
+    .chat-bot{
+        right:10px;
+        bottom:10px;
+
+        --df-messenger-chat-window-width:95vw;
+        --df-messenger-chat-window-height:75vh;
+    }
+
+}
